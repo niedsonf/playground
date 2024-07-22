@@ -11,7 +11,7 @@ export function BoardCell({ cellValue, className, ...props }: BoardCellInterface
     return (
         <div
             className={cn(
-                'h-16 w-16 border border-gray-950 cursor-pointer',
+                'h-16 w-16 cursor-pointer hover:outline outline-2 -outline-offset-8 outline-green-400 hover:animate-pulse',
                 +cellNumber & 1
                     ? (cellLetter.charCodeAt(0) & 1 ? 'bg-gray-300' : 'bg-gray-950')
                     : (cellLetter.charCodeAt(0) & 1 ? 'bg-gray-950' : 'bg-gray-300'),

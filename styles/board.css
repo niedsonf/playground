@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+    .board {
+        display: grid;
+        grid-template-areas: 
+        '. letter .'
+        'number board number-invert'
+        '. letter-invert .';
+    }
+}

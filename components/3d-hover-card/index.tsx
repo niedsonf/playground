@@ -28,12 +28,16 @@ export function HoverCard3D() {
         })
     }, [])
 
-    return <div
-        ref={ref}
-        className={clsx(
-            "w-72 h-72",
-            "bg-[rgba(255,255,255,0.2)] bg-opacity-20 backdrop-blur-[2px]",
-            "border border-[1px_solid_rgba(255,255,255,0.3)]",
-            "rounded-2xl"
-        )} />
+    return (
+        <div
+            ref={ref}
+            className={clsx(
+                "w-72 h-72 grid place-items-center",
+                "bg-[rgba(255,255,255,0.2)] bg-opacity-20 backdrop-blur-[2px]",
+                "border border-[1px_solid_rgba(255,255,255,0.3)]",
+                "rounded-2xl"
+            )} >
+            <span className="font-400 text-xl text-gray-100">I'm a card :3</span>
+        </div>
+    )
 }

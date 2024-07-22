@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer utilities {
+  .clip-side-menu-arrow-wrapper {
+    clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+  }
+}
