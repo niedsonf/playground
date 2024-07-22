@@ -37,7 +37,7 @@ export function HoverCard3D() {
                 "border border-[1px_solid_rgba(255,255,255,0.3)]",
                 "rounded-2xl"
             )} >
-            <span className="font-400 text-xl text-gray-100">I'm a card :3</span>
+            <span className="font-400 text-xl text-gray-100">I&apos;m a card :3</span>
         </div>
     )
 }

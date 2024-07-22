@@ -24,22 +24,38 @@ export function Board({ cells }: BoardInterface) {
             <div id="__board__" className="board">
                 <div style={{ gridArea: 'letter' }} className="flex bg-gray-700">
                     {Array.from(Array(columnCellQuantity)).map((_, i) => (
-                        <span className="h-16 w-16 grid place-items-center text-gray-300 rotate-180">{String.fromCharCode(65 + i)}</span>
+                        <span
+                            key={`board-coord-letter-${i}`}
+                            className="h-16 w-16 grid place-items-center text-gray-300 rotate-180">
+                            {String.fromCharCode(65 + i)}
+                        </span>
                     ))}
                 </div>
                 <div style={{ gridArea: 'number' }} className="flex flex-col bg-gray-700">
                     {Array.from(Array(columnCellQuantity)).map((_, i) => (
-                        <span className="h-16 w-16 grid place-items-center text-gray-300 rotate-180">{i + 1}</span>
+                        <span
+                            key={`board-coord-number-${i}`}
+                            className="h-16 w-16 grid place-items-center text-gray-300 rotate-180">
+                            {i + 1}
+                        </span>
                     ))}
                 </div>
                 <div style={{ gridArea: 'letter-invert' }} className="flex bg-gray-700">
                     {Array.from(Array(columnCellQuantity)).map((_, i) => (
-                        <span className="h-16 w-16 grid place-items-center text-gray-300">{String.fromCharCode(65 + i)}</span>
+                        <span
+                            key={`board-coord-letter-invert-${i}`}
+                            className="h-16 w-16 grid place-items-center text-gray-300">
+                            {String.fromCharCode(65 + i)}
+                        </span>
                     ))}
                 </div>
                 <div style={{ gridArea: 'number-invert' }} className="flex flex-col bg-gray-700">
                     {Array.from(Array(columnCellQuantity)).map((_, i) => (
-                        <span className="h-16 w-16 grid place-items-center text-gray-300">{i + 1}</span>
+                        <span
+                            key={`board-coord-number-invert-${i}`}
+                            className="h-16 w-16 grid place-items-center text-gray-300">
+                            {i + 1}
+                        </span>
                     ))}
                 </div>
                 <div id='__board__cells__'

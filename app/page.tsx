@@ -70,14 +70,14 @@ export default function Home() {
       </h1>
       <div className="flex items-center gap-32" id="home-legends">
         <h2 className="text-xl">
-          There's
+          There&apos;s
           <br />
           <span className="text-2xl">no purpose </span>
           <br />
           to this site.
         </h2>
         <h2 className="text-xl text-center">
-          It's just a place
+          It&apos;s just a place
           <br />
           for me to test
           <br />
